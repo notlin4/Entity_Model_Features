@@ -534,7 +534,7 @@ public class EMFModelPart extends ModelPart  {
              cubeX,  cubeY,  cubeZ,
              sizeX,  sizeY,  sizeZ,
              extraX,  extraY,  extraZ,false,
-             textureWidth,  textureHeight);
+             textureWidth,  textureHeight, new HashSet<>(){{addAll(List.of(Direction.values()));}} );
 
             CuboidAccessor accessor = (CuboidAccessor) this;
             accessor.setMinX(cubeX);//this.minX = cubeX;
@@ -666,7 +666,7 @@ public class EMFModelPart extends ModelPart  {
                     cubeX,  cubeY,  cubeZ,
                     sizeX,  sizeY,  sizeZ,
                     extraX,  extraY,  extraZ,false,
-                    textureWidth,  textureHeight);
+                    textureWidth,  textureHeight, new HashSet<>(){{addAll(List.of(Direction.values()));}} );
 
             CuboidAccessor accessor = (CuboidAccessor) this;
             accessor.setMinX(cubeX);//this.minX = cubeX;
